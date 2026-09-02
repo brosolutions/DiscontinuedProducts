@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<!--
+  * Copyright (c) 2026 BroSolutions
+  * All rights reserved
+  *
+  * This product includes proprietary software developed at BroSolutions, Ukraine
+  * For more information see https://www.brosolutions.net/
+  *
+  * To obtain a valid license for using this software please contact us at
+  * contact@brosolutions.net
+  -->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+    <preference
+        for="Magento\Catalog\Model\Product\LinkTypeProvider"
+        type="BroSolutions\DiscontinuedProducts\Model\ProductLink\LinkTypeProvider"
+    />
+    <type name="Magento\Catalog\Model\ProductLink\CollectionProvider">
+        <arguments>
+            <argument name="providers" xsi:type="array">
+                <item name="replacement" xsi:type="object">BroSolutions\DiscontinuedProducts\Model\ProductLink\CollectionProvider\Replacement</item>
+            </argument>
+        </arguments>
+    </type>
+    <type name="Magento\Catalog\Model\Product\Type\AbstractType">
+        <plugin name="brosolutions_discontinuedproducts_block_cart"
+                type="BroSolutions\DiscontinuedProducts\Plugin\Model\Product\Type\BlockDiscontinuedFromCart" />
+    </type>
+  </config>

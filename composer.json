@@ -1,0 +1,30 @@
+{
+    "name": "brosolutions/discontinued-products",
+    "description": "Discontinued Products module",
+    "require": {
+        "php": ">=7.4",
+        "magento/framework": ">=100.0.0",
+        "magento/module-catalog": ">=100.0.0",
+        "magento/module-store": ">=100.0.0",
+        "magento/module-eav": ">=100.0.0"
+    },
+    "type": "magento2-module",
+    "version": "1.0.0",
+    "license": "MIT",
+    "autoload": {
+        "files": [
+            "registration.php"
+        ],
+        "psr-4": {
+            "BroSolutions\\DiscontinuedProducts\\": ""
+        }
+    },
+    "extra": {
+        "map": [
+            [
+                "*",
+                "BroSolutions/DiscontinuedProducts"
+            ]
+        ]
+    }
+}

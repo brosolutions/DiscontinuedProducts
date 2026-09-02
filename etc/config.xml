@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<!--
+  * Copyright (c) 2026 BroSolutions
+  * All rights reserved
+  *
+  * This product includes proprietary software developed at BroSolutions, Ukraine
+  * For more information see https://www.brosolutions.net/
+  *
+  * To obtain a valid license for using this software please contact us at
+  * contact@brosolutions.net
+  -->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Store:etc/config.xsd">
+    <default>
+        <brosolutions_discontinued_products>
+            <general>
+                <message>This product has been discontinued and is no longer available for purchase.</message>
+            </general>
+        </brosolutions_discontinued_products>
+    </default>
+</config>
