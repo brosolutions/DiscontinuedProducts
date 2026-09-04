@@ -18,13 +18,5 @@
         "psr-4": {
             "BroSolutions\\DiscontinuedProducts\\": ""
         }
-    },
-    "extra": {
-        "map": [
-            [
-                "*",
-                "BroSolutions/DiscontinuedProducts"
-            ]
-        ]
     }
 }
